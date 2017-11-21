@@ -1,0 +1,27 @@
+/* Polices */
+
+@font-face{	
+	font-family : "Droid Sans";
+	src : url('DroidSans.ttf') format('truetype'),
+}
+@font-face {
+    font-family: "Droid Sans";
+	src : url('DroidSans-Bold.ttf') format('truetype'),
+    font-weight: bold;
+}
+
+body {
+	font-family: "Droid Sans",sans-serif;
+	margin: auto;
+	font-size: 0.9em;
+}
+
+td {
+	padding: 0.25em;
+}
+
+.entete {
+	font-size: 0.8em;
+	color: #391087;
+}
+

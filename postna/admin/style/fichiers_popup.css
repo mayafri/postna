@@ -1,0 +1,70 @@
+body {
+	margin: 1em;
+}
+.url {
+	position: absolute;
+	top: 0.5em;
+	left: 5em;
+	right: 7.5em;
+}
+.upload {
+	position: absolute;
+	top: 0em;
+	right: 1em;
+}
+#alternatif {
+	z-index: 2;
+	position: fixed;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1em;
+	background-color: #ddd;
+	border-top: 1px silver solid;
+}
+input[type='text'] {
+	width: calc(100% - 8em);
+}
+#elements_dossier {
+	margin-bottom: 4em;
+}
+
+h2, #contenu {
+	margin: 0;
+}
+
+h2 {
+	top: 0;
+	left: 0;
+}
+
+h3 {
+	padding-top: 4em;
+	margin-left: 1em;
+}
+
+#contenu {
+	padding-top: 1em;
+}
+
+.boutons {
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 1em;
+	background-color: #ddd;
+	border-top: 1px silver solid;
+}
+
+.boutons a, .boutons input {
+	border-color: #aaa;
+	box-shadow: 0px 1px 3px silver;
+}
+
+.boutons a:hover, .boutons input:hover {
+	border-color: #391087;
+	box-shadow: 0px 2px 6px #aaa;
+}

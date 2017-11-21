@@ -1,0 +1,36 @@
+body {
+  background: #ddd;
+}
+
+h1 {
+  padding-left: 1em;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+table {
+  width: 100%;
+}
+
+#contenu {
+  width: 30em;
+  margin: auto;
+  margin-top: 1.5em;
+  height: auto;
+  padding: 2em;
+  padding-bottom: 1em;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+
+#logo {
+  text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+}
+

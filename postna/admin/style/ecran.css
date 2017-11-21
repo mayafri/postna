@@ -1,0 +1,515 @@
+/*
+COULEURS :
+
+Clair : D9CAF7
+Foncé : 391087
+
+*/
+
+
+/* Polices */
+
+@font-face{	
+	font-family : "Droid Sans";
+	src : url('DroidSans.ttf') format('truetype'),
+}
+@font-face {
+    font-family: "Droid Sans";
+	src : url('DroidSans-Bold.ttf') format('truetype'),
+    font-weight: bold;
+}
+
+@font-face{	
+	font-family : "fontello";
+	src : url('fontello.ttf') format('truetype'),
+}
+
+input[type="submit"],
+input[type="text"],
+input[type="password"],
+input[type="number"],
+body, select {
+		font-family: "Droid Sans",sans-serif;
+}
+
+
+/* body */
+
+body {
+	margin: auto;
+	background-color: #f8f8f8;
+	height: 100%;
+	font-size: 0.9em;
+}
+
+
+/* Menu principal */
+
+#menu {
+	background-image: url('logo_blanc.png');
+	background-repeat: no-repeat;
+	background-position: center 1em;
+	position: fixed;
+	width: 10em;
+	height: 100vh;
+	background-color: #391087;
+	padding: 1em;
+	padding-top: 4em;
+	color: white;
+	line-height: 3em;
+	box-shadow: 0px -10px 10px black;
+	z-index: 1;
+}
+
+#menu #login {
+	position: absolute;
+	bottom: 5.5em;
+}
+
+#menu p {
+	margin: 0;
+}
+
+
+/* Titres */
+
+h1 {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 0.5em;
+	padding-left: 14em;
+	background: #ddd;
+	border-top: 1px solid silver;
+	text-align: left;
+	font-size: 1em;
+	color: #444;
+}
+
+h2 {
+	background: #ddd;
+	width: 100%;
+	padding: 0.5em;
+	padding-left: 1em;
+	float: left;
+	font-size: 2em;
+	color: #391087;
+	margin: 0;
+	margin-left: 6em;
+	border-bottom: 1px solid silver;
+	position: fixed;
+}
+
+
+/* Menu secondaire */
+
+#menucat {
+	position: fixed;
+	padding-right: 1.5em;
+	right: 0em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+
+#menucat input[type=text] {
+	position: absolute;
+	right: 1em;
+	height: 1.5em;
+	font-size: 1.45em;
+	width: calc(100vw - 30em);
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+@media (min-width: 1400px) {
+	#menucat {
+		right: 0;
+		width: calc(100% - 12em);
+		text-align: center;
+		padding-left: 0;
+		padding-right:0;
+	}
+}
+
+
+/* Contenu et vide */
+
+#contenu {
+	margin: auto;
+	margin-left: 12em;
+	clear: both;
+	background-color: #f8f8f8;
+	padding: 2em;
+	padding-top: 6em;
+}
+
+/* Index : panneau de l'arborescence */
+
+#arbo {
+	padding: 0.5em;
+	padding-bottom: 4em;
+	float: left;
+	font-size: 0.85em;
+	overflow: auto;
+}
+
+#arbo a, .ligne_dossiers a {
+	display: inline-block;
+}
+
+.lectureseule {
+	color: gray;
+}
+
+/* Index : panneau des billets */
+
+#billets {
+	padding-left: 1em;
+	padding-bottom: 1em;
+	overflow: auto;
+}
+
+#nomcategorie {
+	padding: 0.25em;
+	padding-top: 0em;
+	font-size: 2em;	
+}
+
+#pages {
+	clear: both;
+	margin: 0;
+	margin-bottom: 2em;
+	padding: 0.5em;
+}
+
+#pages, .ligne_dossiers {
+	margin: 0;
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+.ligne_dossiers {
+	margin-bottom: 0.5em;
+}
+
+.ligne_dossiers a {
+	margin-bottom: 0.5em;
+}
+
+.liste_billets tr {
+	height: 4em;
+}
+
+.liste_billets .date {
+	color: gray;
+	margin-left: 1.25em;
+}
+
+.liste_billets .art[href="#"] {
+	color: #555;
+}
+
+.liste_billets .art,
+.liste_billets .art:hover[href="#"],
+.liste_billets .art:active[href="#"] {
+	border-color: transparent;
+	background: none;
+	font-size: 1.2em;
+	box-shadow: none;
+}
+
+.liste_billets .art:focus[href="#"] {
+	border-color: silver;
+	box-shadow: none;
+}
+
+.liste_billets .art:hover {
+	box-shadow:inherit;
+}
+
+td:nth-child(3) {
+	white-space: nowrap;
+}
+
+/* Liens et formulaires */
+
+a {
+	cursor: default;
+	padding: 1px;
+	text-decoration: none;
+}
+
+input[type="submit"] {
+	font-size: 1em;
+	padding: 0.43em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+}
+
+input, a, .desactive:focus, .desactive:hover {
+	display: inline-block;
+	outline:none;
+	color: black;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	background: #fff;
+	background: linear-gradient(#fff, #f0f0f0);
+	box-shadow: 0px 1px 2px #e9e9e9;
+	transition: 0.2s;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	line-height: 1.2em;
+}
+
+input:hover, input:focus, a:hover, a:focus, .liste_billets .art:hover, .liste_billets .art:focus {
+	border-color: #391087;
+	box-shadow: 0px 1px 3px #bbb;
+	transition: 0;
+}
+
+input[type="submit"]:active, a:active, .liste_billets .art:active {
+ 	background: #f0f0f0;
+	background: linear-gradient(#f0f0f0, #fff);
+}
+
+#menucat input, #menucat a {
+	box-shadow: 0px 1px 3px silver;
+	border-color: #aaa;
+}
+
+#menucat input:hover {
+	box-shadow: 0px 2px 6px #aaa;
+}
+
+#menucat input:focus, #menucat a:hover, #menucat a:focus {
+	border-color: #391087;
+	box-shadow: 0px 2px 6px #aaa;
+}
+
+#menu a {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	width: 8em;
+	background: #391087;
+	background: linear-gradient(#5D2FB5, #391087);
+	box-shadow: 0px 2px 6px #2E0D6E;
+	color: white;
+	border-color: #15003C;
+	display: inline-block;
+}
+
+#menu a:hover, #menu a:focus {
+	box-shadow: 0px 2px 6px #000;
+	border-color: white;
+	transition: 0;
+}
+
+#menu a:active {
+	background: #5D2FB5;
+	background: linear-gradient(#391087, #42129C);
+	color: white;
+}
+
+em a, em input[type="submit"] {
+	color: #d30000;
+	font-style: normal;
+}
+
+.desactive:active {
+	color: #391087;
+}
+
+.desactive, .desactive:hover, .desactive:focus {
+	color: silver;
+}
+
+#arbo strong a, .enfonce {
+	background: #391087;
+	background: linear-gradient(#391087, #5D2FB5);
+	border-color: #391087;
+	color: white;
+	transition: 0;
+}
+
+strong a, strong input[type="submit"] {
+	font-weight: bold;
+}
+
+#menu strong a, #arbo strong a {
+	font-weight: normal;
+}
+
+#menu p strong a {
+	background: #fff;
+	background: linear-gradient(#d8d8d8, #fff);
+	border-color: #000;
+	color: black;
+	transition: 0;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea, select {
+	text-decoration: none;
+	border: 1px solid silver;
+	border-radius: 4px;
+	font-size: 1em;
+	color: #391087;
+	background: white;
+	padding: 0;
+	height: 2em;
+	width: 20em;
+}
+
+input[type="text"], input[type="password"] {
+	width: 19.9em;
+}
+
+select {
+	height: calc(2em + 2px);
+}
+
+input[disabled="disabled"], select[disabled="disabled"] {
+	background: #EEE;
+	color: gray;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+	border: 1px solid #391087;
+}
+
+
+/* Tableaux */
+
+td {
+	padding: 5px;
+}
+
+.droits table {
+	line-height: 2em;
+}
+
+.droits table, table input[type="text"], table input[type="password"], table select {
+	width: 100%;
+}
+
+.ligne_element {
+	margin-bottom: 1em;
+	line-height: 2em;
+}
+
+
+/* Cadres des commentaires */
+
+.com, .boutons_cadre {
+	border: 1px solid silver;
+	border-radius: 3px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.com_nval {
+	background-color: #FFE8E8;
+	border: 1px solid #FFC2C2;
+}
+
+.com, .com_nval {
+	border-radius: 3px;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.boutons, .boutons_cadre {
+	text-align: left;
+	margin-top: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.boutons_cadre {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.boutons a {
+	margin-right: 0.5em;
+}
+
+
+/* Édition des billets */
+
+.editeur {
+	width: 100%;
+	font-size: 1.5em;
+	min-height: calc(100vh - 12em);		
+}
+
+#barreoutils {
+	margin-bottom: 1em;
+}
+
+#billet_d textarea, .entete {
+	font-size: 1.5em;
+	height: 8em;
+}
+
+.billet, #billet_g, #billet_d, .billet .elem {
+	margin-top: 0px;
+	margin-bottom: 2em;
+}
+
+#billet_d select, #billet_d textarea, .entete {
+	width: 100%;
+}
+
+#billet_g {
+	position: fixed;
+	left: 14em;
+	right: calc(20% - 2em);
+	padding-right: 2em;
+}
+
+#billet_d {
+	width: 20%;
+	float: right;
+}
+
+#billet_d .elem p {
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
+
+.billet .boutons {
+	clear: both;
+}
+
+/* Chat */
+
+#conversation object {
+	width: 100%;
+	height: calc(100vh - 22.5em);
+	overflow: auto;
+}
+
+/* Popup */
+
+#popup {
+	position: absolute;
+	z-index: 1;
+	width: 30em;
+	height: 25em;
+	top: 4.4em;
+	left: calc(50% - 15em);
+	border: 1px solid silver;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.25);
+}
+
+#chargement {
+	text-align:center;
+	font-size: 2em;
+	color: #391087;
+}

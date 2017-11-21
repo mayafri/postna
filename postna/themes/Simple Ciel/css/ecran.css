@@ -1,0 +1,188 @@
+html {
+	background-color: #555;
+}
+
+body {
+	font-family: sans-serif;
+	border: 1px solid black;
+	border-radius: 5px;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: white;
+}
+
+a {
+	color: #00789C;
+	transition: 0.2s;
+}
+
+a:hover {
+	transition: 0.2s;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	padding: 0.5em;
+	text-align: center;
+	font-family: Times;
+	font-size: 3em;
+}
+
+h1 a, h2 a {
+	color: black;
+	text-decoration: none;
+	word-spacing: normal;
+}
+
+h2 {
+	font-family: Times;
+	font-size: 2em;
+	margin: 0;
+}
+
+.sous-titre {
+	font-size: 0.9em;
+	margin: 0.5em;
+	margin-left: 0;
+}
+
+#header {
+	background-color: white;
+	word-spacing: 2em;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+}
+
+#recherche {
+	position: absolute;
+	top: 2em;
+	padding-right: 1em;
+	width: 1000px;
+	box-sizing:padding-box;
+	text-align: right;
+	word-spacing: normal;
+}
+
+#menu {
+	background-color: #D3EFF7;
+	padding: 1em;
+}
+
+#menu a {
+		word-spacing: normal;
+		text-decoration: none;
+		color: white;
+		background-color: #00789C;
+		padding: 2px;
+		padding-left: 10px;
+		padding-right: 10px;
+		vertical-align: middle;
+		border: 1px solid black;
+		border-radius: 4px;
+}
+
+#menu a:hover {
+		background-color: black;
+		border-color: black;
+}
+
+#menu a:active {
+		background-color: white;
+		color: black;
+		border-color: black;
+}
+
+#entete {
+	border: 1px #00789C solid;
+	color: #00789C;
+	border-radius: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 1em;
+}
+
+#billets {
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 2%;
+	padding-top: 1em;
+	height: 100%
+}
+
+#pied {
+	border-radius: 0 0 5px 5px;
+	background-color: #D3EFF7;
+	clear: both;
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 2em;
+	border-top: 1px solid #00789C;
+}
+
+#arbo {
+	border-right: 1px dotted #00789C;
+	height: 100%;
+	float: left;
+	width: 21%;
+	padding: 1%;
+}
+
+#arbo p {
+	margin: 0.5em;
+}
+
+#arbo a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+}
+
+#arbo a:hover {
+	text-decoration: underline;
+}
+
+.troncature {
+	max-height: 30em;
+	overflow: hidden;
+	border-bottom: 1px dotted gray;
+}
+
+.lien_troncature {
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+}
+
+div[name='forms'] textarea, #form_0 textarea {
+	width: 100%;
+	height: 6em;
+}
+
+.com {
+	border-left: 10px silver solid;
+	padding-left: 10px;
+}
+
+.pseudo {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+div[name='forms'] {
+	background-color: #D3EFF7;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: -10px;
+}
+
+#form_0 form {
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: 5px;
+	background-color: #D3EFF7;
+}

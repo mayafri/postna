@@ -1,0 +1,274 @@
+@font-face{	
+	font-family : "Oranienbaum";
+	src : url('polices/oranienbaum.ttf') format('truetype'),
+		  url('polices/oranienbaum.eot');
+}
+
+@font-face{	
+	font-family : "WeblySleek UI";
+	src : url('polices/weblysleekuil.ttf') format('truetype'),
+		  url('polices/weblysleekuil.eot');
+}
+
+h2 {
+	clear: both;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+	font-family: "Oranienbaum", serif;
+	font-weight: normal;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h3, h4, h5, h6 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-family: "Oranienbaum", serif;
+	font-weight: normal;
+	font-size: 2.5em;
+}
+
+h4 {
+	font-size: 2em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.25em;
+}
+
+p {
+	padding-top: 0em;
+}
+
+blockquote {
+	padding: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.2em;
+	font-family: "WeblySleek UI", sans-serif;
+	background-color: #F5F5F5;
+	border-radius: 0.5em;
+}
+
+#langue {
+	position: absolute;
+	top: -0.1em;
+	right: 1em;
+	z-index: 3;
+}
+
+#langue img {
+	height: 0.6em;
+	margin-left: 0.3em;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+	opacity: 0.5;
+	transition: 0.6s;
+}
+
+#langue img:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#header {
+	position: fixed;
+	font-size: 1.5em;
+	line-height: 2em;
+	top: 0px;
+	width: 100%;
+	z-index: 3;
+	background-color: #D4D4D4;
+	background: linear-gradient(135deg, rgba(230,240,230,1) 0%,rgba(181,196,181,1) 50%,rgba(230,240,230,1) 100%);
+	box-shadow: 0px 0.1em 1em 0px rgba(0,0,0,0.125);
+}
+
+#recherche {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	width: 10em;
+	text-align: right;
+	word-spacing: normal;
+}
+
+#recherche input[type=text] {
+	font-family: "WeblySleek UI", sans-serif;
+	border-radius: 5px;
+	border: 1px solid silver;
+	font-size: 0.7em;
+	width: 10em;
+}
+
+#recherche input[type=submit] {
+	transition: 0.5s;
+	font-family: "WeblySleek UI", sans-serif;
+	font-size: 0.5em;
+	margin-left: -1em;
+	border-radius: 5px;
+	border: 1px solid silver;
+	background: silver;
+	color: white;
+	font-size: 0.7em;
+}
+
+#recherche input[type=submit]:hover, #recherche input[type=submit]:focus {
+	border-color: gray;
+	color: gray;
+	background: white;
+	transition: 0.5s;
+}
+
+#recherche input[type=submit]:active {
+	color: black;
+	border-color: black;
+}
+
+#menu {
+	word-spacing: 2em;
+	word-break: keep-all;
+	text-align: center;
+	padding-left: 10em;
+	padding-right: 7em;
+}
+
+@media (max-width: 1350px) {
+	#menu {
+		font-size: 0.8em;
+		word-spacing: 1.2em;
+	}
+}
+
+@media (max-width: 1000px) {
+	#menu {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 2.5em;
+		font-size: 0.8em;
+		word-spacing: 1.25em;
+	}
+	#billets {
+		padding-top: 2.5em;
+	}
+}
+
+#header a {
+	color: #FFF;
+	font-family: "Oranienbaum", serif;
+	text-decoration: none;
+	vertical-align: middle;
+	transition: 0.6s;
+	word-spacing: normal;
+}
+
+#header a:hover {
+	color: #222222;
+	transition: 0.3s;
+}
+
+#header .oui {
+	color: #222222;
+}
+
+h1 {
+	position: absolute;
+	top: -0.125em;
+	z-index: 4;
+	margin: 0;
+	padding: 0;
+	left: 0.4em;
+}
+
+h1 img {
+	height: 0.6em;
+	transition: 0.6s;
+}
+
+#langue a img, #defilement a img {
+	border: 0px;
+}
+
+#billets {
+	padding-top: 4em;
+	margin: auto;
+	overflow: hidden;
+	max-width: 45%;
+	min-width: 40em;
+	
+	background-color: #F5F5F5;
+	transition: 1s;
+}
+
+a {
+	color: #666;
+	transition: 0.6s;
+}
+
+h2 a, h3 a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+#billets p {
+	margin-top: 0.2em;
+}
+
+#billets p, ul, ol, table {	
+	font-size: 1.3em;
+	font-family: "WeblySleek UI", sans-serif;
+}
+
+#billets p img {
+	box-shadow: 0 5px 10px 0 gray;
+	margin-left: 10px;
+}
+
+.bloc {
+	overflow: hidden;
+	margin-bottom: 5em;
+}
+
+#billets .bloc .gauche img, #billets .bloc .droite img {
+	max-width: 16em;
+}
+
+.gauche {
+	padding: 0px;
+	margin: 0px;
+	width: 16em;
+	margin-left: 2em;
+	float: left;
+	
+	text-align: right;
+
+}
+
+.droite {
+	padding: 0px;
+	margin: 0px;
+	width: 16em;
+	margin-right: 2em;
+	float: right;
+	
+	text-align: left;
+}
+
+#pied {
+	clear: both;
+	padding-bottom: 3em;
+	padding-top: 50px;
+
+	background-color: #F5F5F5;
+	font-family: "WeblySleek UI", sans-serif;
+	font-size: 0.8em;
+	text-align: center;
+	color: #555;
+}

@@ -1,0 +1,13 @@
+@font-face{	
+	font-family : "Oranienbaum";
+	src : url('polices/oranienbaum.eot');
+}
+
+@font-face{	
+	font-family : "WeblySleek UI";
+	src : url('polices/weblysleekuil.eot');
+}
+
+#menu a, h2 {
+	font-family: "WeblySleek UI";
+}

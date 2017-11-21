@@ -1,0 +1,251 @@
+body {
+	margin: 0px;
+	background-color: #F5F5F5;
+}
+
+h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+#entete {
+	font-size: 1.25em;
+	color: gray;
+}
+
+.sous-titre {
+	margin-top: 0em;
+	margin-bottom: 1.5em;
+	
+	font-family: "Oranienbaum", serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	color: gray;
+}
+
+.sous-titre a {
+	color: gray;
+	transition: 0.6s;
+}
+
+.sous-titre a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+.bloc {
+	margin-bottom: 2em;
+}
+
+#arbo {
+	float: left;
+	position: fixed;
+	height: calc(100% - 6em);
+	width: 12em;
+	padding: 2em;
+	padding-top: 4em;
+	padding-right: 1em;
+	z-index: 2;
+	
+	background-color: #769471;
+	font-family: "WeblySleek UI", sans-serif;
+	font-size: 1.1em;
+	opacity: 0.5;
+	transition: 0.6s;
+}
+
+@media (max-width: 1400px) {
+	#arbo {	
+		padding-right: 5em;
+		margin-left: -15.5em;
+		background-image: url('images/menu.png');
+		background-position: right 3em;
+		background-repeat: no-repeat;
+	}
+	#arbo:hover {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	#arbo {		
+		top: 2.8em;
+		height: 0em;
+		border-radius: 0 0 0.5em 0;
+	}
+	#arbo:hover {
+		height: 100%;
+	}
+}
+
+#arbo:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#arbo p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+#arbo a {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+}
+
+#arbo:hover a {
+	opacity: 0.75;
+	transition: 0.3s;
+}
+
+#arbo:hover strong a {
+	color: white;
+	opacity: 1;
+}
+
+#arbo a:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+#commentaires {
+	font-size: 0.8em;
+	width: 45em;
+	margin: auto;
+}
+
+.com {
+	background-color: rgba(255,255,255, 0.2);
+	border: 1px silver solid;
+	border-radius: 0.3em;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+.pseudo {
+	color: gray;
+}
+
+#commentaires {
+	font-family: "WeblySleek UI", sans-serif;
+	font-size: 1.1em;
+	width: 40em;
+	padding-bottom: 0.5em;
+}
+
+#commentaires p {
+	margin-bottom: 0;
+}
+
+#commentaires p.titre {
+	margin-top: 0.5em;
+	font-size: 1.2em;
+}
+
+#commentaires form {
+	color: black;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+	border-radius: 0.3em;
+	background-color: #E8E8E8;
+	padding: 1em;
+	padding-top: 0.5em;
+}
+
+#commentaires form input[type='text'], #commentaires form textarea {
+	border-radius: 0.3em;
+	border: 1px silver solid;
+	background-color: white;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+	padding: 0.5em;
+	width: 15em;
+	transition: 0.6s;
+  font-size: 0.85em;
+}
+
+#commentaires form textarea {
+	width: calc(100% - 1em);
+	font-family: sans-serif;
+}
+
+#commentaires form input[type='text']:focus, #commentaires form textarea:focus {
+	border-color: black;
+	transition: 0.3s;
+}
+
+.erreur, .ok {
+	text-align: center;
+}
+
+#commentaires input[type='submit'], #commentaires input[type='button'] {
+	font-size: 0.9em;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 0.3em;
+	padding: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	color: white;
+	transition: 0.6s;
+}
+
+#commentaires input[type='submit']:hover, #commentaires input[type='button']:hover {
+	transition: 0.3s;
+	background-color: #222;
+}
+
+#commentaires input[type='submit']:active, #commentaires input[type='button']:active {
+	transition: 0.1s;
+	background-color: white;
+	color: black;
+}
+
+#commentaires input[type='button'] {
+	font-family: "WeblySleek UI", sans-serif;
+	padding-top: 0.1em;
+	padding-bottom: 0.2em;
+	background: none;
+	border: 1px solid black;
+	color: black;
+}
+
+#commentaires input[type='button']:hover {
+	color: white;
+}
+
+.erreur {
+	color: #E60000;
+}
+
+.troncature {
+	max-height: 20em;
+}
+
+.lien_troncature {
+	width: 100%;
+	height: 5em;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 0em;
+	padding-top: 5em;
+	
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(245,245,245,255) 75%);
+	text-align: center;
+}
+
+#billets .lien_troncature a {
+	color: black;
+	opacity: 0.25;
+	text-decoration: none;
+	font-size: 2.5em;
+	transition: 0.3;
+	font-family: "Oranienbaum", serif;
+}
+
+#billets .lien_troncature a:hover {
+	opacity: 0.7;
+	transition: 0.3;
+}

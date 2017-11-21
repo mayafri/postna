@@ -1,0 +1,82 @@
+/* Index : couleurs de catégories */
+
+.couleur_1 {
+	background: #FFBFBF;
+	background: linear-gradient(#FFE6E6, #FFBFBF);
+}
+
+.couleur_2 {
+	background: #D6BFFF;
+	background: linear-gradient(#EFE6FF, #D6BFFF);
+}
+
+.couleur_3 {
+	background: #BFE0FF;
+	background: linear-gradient(#E6F3FF, #BFE0FF);
+}
+
+.couleur_4 {
+	background: #BFFFCC;
+	background: linear-gradient(#E6FFEB, #BFFFCC);
+}
+
+.couleur_5 {
+	background: #FFF0BF;
+	background: linear-gradient(#FFF9E6, #FFF0BF);
+}
+
+.couleur_1:active {
+	background: #FFE6E6;
+	background: linear-gradient(#FFBFBF, #FFE6E6);
+}
+
+.couleur_2:active {
+	background: #EFE6FF;
+	background: linear-gradient(#D6BFFF, #EFE6FF);
+}
+
+.couleur_3:active {
+	background: #E6F3FF;
+	background: linear-gradient(#BFE0FF, #E6F3FF);
+}
+
+.couleur_4:active {
+	background: #E6FFEB;
+	background: linear-gradient(#BFFFCC, #E6FFEB);
+}
+
+.couleur_5:active {
+	background: #FFF9E6;
+	background: linear-gradient(#FFF0BF, #FFF9E6);
+}
+
+select .couleur_0 {
+	background: transparent;
+	color: #000000;
+}
+
+select .couleur_1 {
+	background: transparent;
+	color: #C00000;
+}
+
+select .couleur_2 {
+	background: transparent;
+	color: #4500C0;
+}
+
+select .couleur_3 {
+	background: transparent;
+	color: #0063BF;
+}
+
+select .couleur_4 {
+	background: transparent;
+	color: #00BF26;
+}
+
+select .couleur_5 {
+	background: transparent;
+	color: #BF9200;
+}
+

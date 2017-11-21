@@ -1,0 +1,102 @@
+.boutons {
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+#elements_dossier a {
+	background: none;
+	border: none;
+	background: none;
+	box-shadow: none;
+	padding: 0; 
+}
+
+.elem_dossier {
+	font-size: 0.9em;
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+}
+
+.elem_dossier a {
+	width: 120px;
+	color: black;
+}
+
+.elem_dossier img {
+	max-width: 64px;
+	max-height: 64px;
+}
+
+.elem_dossier a img {
+	transition: 0.1s;
+}
+
+.elem_dossier a:hover img {
+	opacity: 0.85;
+}
+
+.elem_dossier a:active img {
+	z-index: 0;
+	opacity: 0.2;
+	transform: scale(1.1);
+}
+
+.menu_element {
+	margin: 5px;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	margin-left: -45px;
+	margin-top: 55px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 2px;
+	background-color: white;
+	transition: 0.2s;
+}
+
+.menu_element p {
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	height: 1.5em;
+}
+
+.menu_element p a {
+	color: white;
+}
+
+.menu_element:hover {
+	opacity: 1;
+	background: rgba(0,0,0,0.75);
+	transition: 0.1s;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 4.5em;
+	height: 5em;
+	color: white;
+}
+
+.menu_element:hover p a {
+	color: #BBB;
+}
+
+.menu_element:hover p a:hover {
+	color: white;
+	background: black;
+}
+
+.extension {
+	z-index: 1;
+	position: absolute;
+	font-size: 1.2em;
+	color: #391087;
+	margin-top: 40px;
+	margin-left: 40px;
+}

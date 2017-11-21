@@ -1,0 +1,17 @@
+body {
+  max-width: 35em;
+  margin: auto;
+  margin-top: 2em;
+  
+  border: 1px black solid;
+  font-family: sans-serif;
+}
+
+p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+a {
+  color: blue;
+}
